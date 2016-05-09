@@ -25,7 +25,7 @@ brand_query = Model.query.filter_by(id=8).one()
 
 # Get all models with the **name** Corvette and the **brand_name** Chevrolet.
 chevy_corvette = Model.query.filter(and_(
-                                          Model.brand_name=='Chevorlet', 
+                                          Model.brand_name=='Chevrolet', 
                                           Model.name=='Corvette')).all()
 
 # Get all models that are older than 1960.
@@ -50,7 +50,7 @@ old_discontinued = Brand.query.filter(or_(
 
 
 # Get any model whose brand_name is not Chevrolet.
-not_chevy = Model.query.filter(not_(Model.brand_name == 'Chevorlet')).all()
+not_chevy = Model.query.filter(not_(Model.brand_name == 'Chevrolet')).all()
 
 # Fill in the following functions. (See directions for more info.)
 
